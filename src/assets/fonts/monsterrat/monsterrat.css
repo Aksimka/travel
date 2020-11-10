@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Monsterrat';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Monsterrat';
+  src: url('ttf/Monsterrat-SemiBold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monsterrat';
+  src: url('ttf/Monsterrat-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}

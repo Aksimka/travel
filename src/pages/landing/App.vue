@@ -8,7 +8,7 @@
 
 <script>
 import { Component, Vue } from 'vue-property-decorator';
-import Header from './components/header.vue';
+import Header from './components/blocks/header.vue';
 
 @Component({
   components: { Header },
@@ -22,6 +22,10 @@ body {
   margin: 0 !important;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Monsterrat', sans-serif;
+}
+a {
+  color: #ffffff;
 }
 .landing {
   height: 5000px;
