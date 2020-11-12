@@ -22,7 +22,7 @@ body {
   margin: 0 !important;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Monsterrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 a {
   color: #ffffff;
