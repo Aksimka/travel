@@ -22,11 +22,15 @@
         </div>
       </div>
     </div>
+    <div class="header-search-block-wrapper">
+      <search />
+    </div>
   </div>
 </template>
 
 <script>
 import IconTextSnippet from '@/pages/landing/components/ui/icon-text-snippet.vue';
+import search from '@/pages/landing/components/blocks/search.vue';
 import iconPinmap from '../icons/icon-pinmap.vue';
 import iconClock from '../icons/icon-clock.vue';
 import iconCloud from '../icons/icon-cloud.vue';
@@ -43,6 +47,7 @@ export default {
     iconPlane,
     iconBed,
     iconCar,
+    search,
   },
   data: () => ({
     textSnippets: [
@@ -80,7 +85,7 @@ export default {
 
 <style scoped lang="scss">
 .header {
-  height: 900px;
+  height: 942px;
   background-image: url("../../assets/images/header-image.jpg");
   background-size: cover;
   position: relative;
@@ -118,9 +123,42 @@ export default {
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      width: 64%;
+      width: 68%;
       max-width: 1200px;
     }
+  }
+  .header-search-block-wrapper {
+    position: relative;
+    margin-top: 333px;
+  }
+}
+
+@media screen and (max-width: 1264px) {
+  .header {
+    .header-content {
+      display: block !important;
+      padding-top: 200px;
+      &__main-title {
+        margin-left: 50px;
+      }
+      &__second-title {
+        margin-left: 50px;
+        padding-right: 30px;
+      }
+      .header-content-snippets {
+        margin: 50px auto 0 auto;
+        .header-content-snippet-wrapper {
+          width: 220px;
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header-content-snippets {
+    width: 85% !important;
   }
 }
 </style>
