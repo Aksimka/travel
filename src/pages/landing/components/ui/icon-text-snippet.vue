@@ -1,7 +1,7 @@
 <template>
   <span class="icon-text-snippet">
     <span class="icon-text-snippet__icon">
-      <icon-wrapper width="32px" height="32px" icon-color="#ffffff">
+      <icon-wrapper width="40px" height="40px" icon-color="#ffffff">
         <slot name="icon"></slot>
       </icon-wrapper>
     </span>

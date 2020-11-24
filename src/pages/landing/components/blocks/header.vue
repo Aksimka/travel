@@ -22,9 +22,11 @@
         </div>
       </div>
     </div>
-    <div class="header-search-block-wrapper">
-      <search />
-    </div>
+    <ui-container>
+      <div class="header-search-block-wrapper">
+        <search />
+      </div>
+    </ui-container>
   </div>
 </template>
 
@@ -85,7 +87,6 @@ export default {
 
 <style scoped lang="scss">
 .header {
-  height: 942px;
   background-image: url("../../assets/images/header-image.jpg");
   background-size: cover;
   position: relative;
@@ -103,9 +104,9 @@ export default {
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 266px;
+    padding-top: 290px;
     &__main-title {
-      font-size: 50px;
+      font-size: 56px;
       font-weight: 600;
       color: #ffffff;
       letter-spacing: 1px;
@@ -113,23 +114,24 @@ export default {
     &__second-title {
       font-size: 20px;
       color: #ffffff;
-      margin-top: 43px;
+      margin-top: 52px;
       letter-spacing: 1px;
       font-weight: 400;
     }
     .header-content-snippets {
-      margin-top: 50px;
+      margin-top: 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       width: 68%;
-      max-width: 1200px;
+      max-width: 1315px;
     }
   }
   .header-search-block-wrapper {
     position: relative;
-    margin-top: 333px;
+    margin-top: 350px;
+    padding-bottom: 50px;
   }
 }
 
@@ -153,12 +155,21 @@ export default {
         }
       }
     }
+    .header-search-block-wrapper {
+      margin-top: 220px;
+    }
   }
 }
 
 @media screen and (max-width: 960px) {
   .header-content-snippets {
     width: 85% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-search-block-wrapper {
+    margin-top: 100px !important;
   }
 }
 </style>
